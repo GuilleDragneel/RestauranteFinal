@@ -25,27 +25,27 @@ public class Usuario extends Persona {
         this.contraseña = contraseña;
     }
 
-    public String getCodigo() {
+    public String getcodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setcodigo(String codigo) {
         this.codigo = codigo;
     }
 
-    public String getNombre_usuario() {
+    public String getnombre_usuario() {
         return nombre_usuario;
     }
 
-    public void setNombre_usuario(String nombre_usuario) {
+    public void setnombre_usuario(String nombre_usuario) {
         this.nombre_usuario = nombre_usuario;
     }
 
-    public String getContraseña() {
+    public String getcontraseña() {
         return contraseña;
     }
 
-    public void setContraseña(String contraseña) {
+    public void setcontraseña(String contraseña) {
         this.contraseña = contraseña;
     }
 
@@ -59,9 +59,9 @@ public class Usuario extends Persona {
         lista.add(b);
         lista.add(c);
         for (Usuario i : lista) {
-            System.out.println("Codigo: " + i.getCodigo());
-            System.out.println("Nombre usuario: " + i.getNombre_usuario());
-            System.out.println("Contraseña: " + i.getContraseña());
+            System.out.println("Codigo: " + i.getcodigo());
+            System.out.println("Nombre usuario: " + i.getnombre_usuario());
+            System.out.println("Contraseña: " + i.getcontraseña());
             System.out.println("Nombre: " + i.getNombre());
             System.out.println("Sexo: " + i.getSexo());
             System.out.println("Edad: " + i.getEdad());

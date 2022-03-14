@@ -6,16 +6,13 @@ Descripcion= Paquete de entity y clase persona
  */
 package Entity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class Persona {
 
     private String nombre;
     private String sexo;
     private Integer edad;
 
-    public Persona() {
+    public Persona() { 
     }
 
     public Persona(String nombre, String sexo, Integer edad) {
