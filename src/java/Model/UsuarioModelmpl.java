@@ -113,7 +113,7 @@ public class UsuarioModelmpl implements IUsuarioModel {
             conexion = new Conexion();
             conexion.Conectar();
             connection = conexion.getConnection();
-            String sql = "select from usuario where codigo=" + idUsuario + ";";
+            String sql = "delete from usuario where codigo=" + idUsuario + ";";
             PreparedStatement st = connection.prepareStatement(sql);
             st.executeUpdate();
             conexion.Desconectar();
