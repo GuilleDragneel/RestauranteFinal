@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 11/03/2022
-Fecha actualizacion= 11/03/2022
+Fecha actualizacion= 14/03/2022
 Descripcion= Implementacion interface usuario 
  */
 package Model;
@@ -52,23 +52,74 @@ public class UsuarioModelmpl implements IUsuarioModel {
             st.executeUpdate();
             conexion.Desconectar();
         } catch (Exception ex) {
-            System.out.println("Error de crear registro= " + ex);
+            System.out.println("Error de actualizar registro= " + ex);
         }
     }
 
     @Override
     public List<Usuario> obtenerRegistros() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Object[] usu = new Object[6];
+        try {
+            conexion = new Conexion();
+            conexion.Conectar();
+            connection = conexion.getConnection();
+            String sql = "select * from usuario;";
+            Statement s = connection.createStatement();
+            ResultSet rs = s.executeQuery(sql);
+            while (rs.next()) {
+                usu[1] = rs.getInt(1);
+                usu[2] = rs.getString(2);
+                usu[3] = rs.getString(3);
+                usu[4] = rs.getString(4);
+                usu[5] = rs.getString(5);
+                usu[6] = rs.getInt(6);
+            }
+            conexion.Desconectar();
+        } catch (Exception ex) {
+            System.out.println("Error al obtener registros= " + ex);
+        }
+        return null;
     }
 
     @Override
     public Usuario obtenerRegistro(int idUsuario) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Object[] usu1 = new Object[6];
+        try {
+            conexion = new Conexion();
+            conexion.Conectar();
+            connection = conexion.getConnection();
+            String sql = "select from usuario where codigo=" + idUsuario + ";";
+            Statement s = connection.createStatement();
+            ResultSet rs = s.executeQuery(sql);
+            while (rs.next()) {
+                usu1[1] = rs.getInt(1);
+                usu1[2] = rs.getString(2);
+                usu1[3] = rs.getString(3);
+                usu1[4] = rs.getString(4);
+                usu1[5] = rs.getString(5);
+                usu1[6] = rs.getInt(6);
+
+            }
+            conexion.Desconectar();
+        } catch (Exception ex) {
+            System.out.println("Error de obetener registro= " + ex);
+        }
+        return null;
     }
 
     @Override
     public void eliminarResgistro(int idUsuario) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try {
+            conexion = new Conexion();
+            conexion.Conectar();
+            connection = conexion.getConnection();
+            String sql = "select from usuario where codigo=" + idUsuario + ";";
+            PreparedStatement st = connection.prepareStatement(sql);
+            st.executeUpdate();
+            conexion.Desconectar();
+        } catch (Exception ex) {
+            System.out.println("Error de eliminar registro= " + ex);
+        }
     }
 
     public static void main(String[] args) {
@@ -80,6 +131,7 @@ public class UsuarioModelmpl implements IUsuarioModel {
         a.setSexo("Hombre");
         a.setEdad(18);
         UsuarioModelmpl um = new UsuarioModelmpl();
-        um.actualizarRegistro(a);
+//        um.actualizarRegistro(a);
+//        um.eliminarResgistro(1);
     }
 }
