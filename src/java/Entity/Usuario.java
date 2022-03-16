@@ -25,6 +25,10 @@ public class Usuario extends Persona {
         this.contraseña = contraseña;
     }
 
+    public Usuario(String string, String string0, String string1, String string2, int aInt) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public String getcodigo() {
         return codigo;
     }
@@ -68,4 +72,5 @@ public class Usuario extends Persona {
             System.out.println("\n\n");
         }
     }
+
 }

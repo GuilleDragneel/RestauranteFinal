@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 11/03/2022
-Fecha actualizacion= 14/03/2022
+Fecha actualizacion= 15/03/2022
 Descripcion= Implementacion interface usuario 
  */
 package Model;
@@ -9,9 +9,10 @@ package Model;
 import Entity.Usuario;
 import bd.Conexion;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
-public class UsuarioModelmpl implements IUsuarioModel {
+public class UsuarioModelImpl implements IUsuarioModel {
 
     private Conexion conexion;
     private Connection connection;
@@ -58,7 +59,8 @@ public class UsuarioModelmpl implements IUsuarioModel {
 
     @Override
     public List<Usuario> obtenerRegistros() {
-        Object[] usu = new Object[6];
+        Usuario usu = null;
+        List<Usuario> lista = null;
         try {
             conexion = new Conexion();
             conexion.Conectar();
@@ -66,45 +68,49 @@ public class UsuarioModelmpl implements IUsuarioModel {
             String sql = "select * from usuario;";
             Statement s = connection.createStatement();
             ResultSet rs = s.executeQuery(sql);
+            usu = new Usuario();
+            lista = new ArrayList<Usuario>();
+
             while (rs.next()) {
-                usu[1] = rs.getInt(1);
-                usu[2] = rs.getString(2);
-                usu[3] = rs.getString(3);
-                usu[4] = rs.getString(4);
-                usu[5] = rs.getString(5);
-                usu[6] = rs.getInt(6);
+                usu.setcodigo(rs.getString("codigo"));
+                usu.setnombre_usuario(rs.getString("nombre_usuario"));
+                usu.setcontraseña(rs.getString("contraseña"));
+                usu.setNombre(rs.getString("nombre"));
+                usu.setSexo(rs.getString("sexo"));
+                usu.setEdad(rs.getInt("edad"));
+                lista.add(usu);
             }
             conexion.Desconectar();
         } catch (Exception ex) {
             System.out.println("Error al obtener registros= " + ex);
         }
-        return null;
+        return lista;
     }
 
     @Override
     public Usuario obtenerRegistro(int idUsuario) {
-        Object[] usu1 = new Object[6];
+        Usuario usu1 = null;
         try {
             conexion = new Conexion();
             conexion.Conectar();
             connection = conexion.getConnection();
-            String sql = "select from usuario where codigo=" + idUsuario + ";";
+            String sql = "select * from usuario where codigo=" + idUsuario + ";";
             Statement s = connection.createStatement();
             ResultSet rs = s.executeQuery(sql);
+            usu1 = new Usuario();
             while (rs.next()) {
-                usu1[1] = rs.getInt(1);
-                usu1[2] = rs.getString(2);
-                usu1[3] = rs.getString(3);
-                usu1[4] = rs.getString(4);
-                usu1[5] = rs.getString(5);
-                usu1[6] = rs.getInt(6);
-
+                usu1.setcodigo(rs.getString("codigo"));
+                usu1.setnombre_usuario(rs.getString("nombre_usuario"));
+                usu1.setcontraseña(rs.getString("contraseña"));
+                usu1.setNombre(rs.getString("nombre"));
+                usu1.setSexo(rs.getString("sexo"));
+                usu1.setEdad(rs.getInt("edad"));
             }
             conexion.Desconectar();
         } catch (Exception ex) {
             System.out.println("Error de obetener registro= " + ex);
         }
-        return null;
+        return usu1;
     }
 
     @Override
@@ -124,14 +130,25 @@ public class UsuarioModelmpl implements IUsuarioModel {
 
     public static void main(String[] args) {
         Usuario a = new Usuario();
-        a.setcodigo("1");
-        a.setnombre_usuario("Aventura");
-        a.setcontraseña("jake");
-        a.setNombre("Finn");
-        a.setSexo("Hombre");
-        a.setEdad(18);
-        UsuarioModelmpl um = new UsuarioModelmpl();
-//        um.actualizarRegistro(a);
-//        um.eliminarResgistro(1);
+//        a.setcodigo("1");
+//        a.setnombre_usuario("Hice King");
+//        a.setcontraseña("bett");
+//        a.setNombre("Simon");
+//        a.setSexo("Hombre");
+//        a.setEdad(1880);
+        UsuarioModelImpl um = new UsuarioModelImpl();
+
+        //um.crearRegisto(a);
+        //um.actualizarRegistro(a);
+        //um.eliminarResgistro(1);
+        a = um.obtenerRegistro(3);
+        System.out.println(a.getNombre());
+
+        List<Usuario> listaUsuario = um.obtenerRegistros();
+
+        for (Usuario u : listaUsuario) {
+            System.out.println("NOmbre: " + u.getNombre());
+        }
+        //System.out.println(um.obtenerRegistros());
     }
 }
