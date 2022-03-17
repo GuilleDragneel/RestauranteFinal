@@ -68,10 +68,9 @@ public class UsuarioModelImpl implements IUsuarioModel {
             String sql = "select * from usuario;";
             Statement s = connection.createStatement();
             ResultSet rs = s.executeQuery(sql);
-            usu = new Usuario();
             lista = new ArrayList<Usuario>();
-
             while (rs.next()) {
+                usu = new Usuario();
                 usu.setcodigo(rs.getString("codigo"));
                 usu.setnombre_usuario(rs.getString("nombre_usuario"));
                 usu.setcontraseña(rs.getString("contraseña"));
