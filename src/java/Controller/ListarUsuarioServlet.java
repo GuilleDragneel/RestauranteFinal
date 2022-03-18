@@ -28,7 +28,7 @@ public class ListarUsuarioServlet extends HttpServlet {
         out.println("<html>");
 
         out.println("<head>");
-        out.println("<link rel='stylesheet' href='"+request.getContextPath()+"/Resources/CSS/estilo.css'>");
+        out.println("<link rel='stylesheet' href='" + request.getContextPath() + "/Resources/CSS/estilo.css'>");
         out.println("</head>");
 
         out.println("<body>");
@@ -52,12 +52,14 @@ public class ListarUsuarioServlet extends HttpServlet {
             out.println("<td>" + usuario.getcontraseña() + "</td>");
             out.println("<td>" + usuario.getNombre() + "</td>");
             out.println("<td>" + usuario.getSexo() + "</td>");
-            out.println("<td>" + usuario.getEdad() + "</td>");  
+            out.println("<td>" + usuario.getEdad() + "</td>");
+            out.println("<th><a href=''>Editar</a></th>");
+            out.println("<th><a href='EliminarUsuarioServlet?idUduario=" + usuario.getcodigo() + "'>Eliminar</a></th>");
             out.println("</tr>");
         }
         out.println("</tbody>");
         out.println("</table>");
-        
+
         out.println("</body>");
 
         out.println("</html>");

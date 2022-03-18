@@ -119,8 +119,8 @@ public class UsuarioModelImpl implements IUsuarioModel {
             conexion.Conectar();
             connection = conexion.getConnection();
             String sql = "delete from usuario where codigo=" + idUsuario + ";";
-            PreparedStatement st = connection.prepareStatement(sql);
-            st.executeUpdate();
+            Statement st = connection.createStatement();
+            int rs = st.executeUpdate(sql);
             conexion.Desconectar();
         } catch (Exception ex) {
             System.out.println("Error de eliminar registro= " + ex);
@@ -129,15 +129,15 @@ public class UsuarioModelImpl implements IUsuarioModel {
 
     public static void main(String[] args) {
         Usuario a = new Usuario();
-//        a.setcodigo("1");
-//        a.setnombre_usuario("Hice King");
-//        a.setcontraseña("bett");
-//        a.setNombre("Simon");
-//        a.setSexo("Hombre");
-//        a.setEdad(1880);
+        a.setcodigo("1");
+        a.setnombre_usuario("Hice King");
+        a.setcontraseña("bett");
+        a.setNombre("Simon");
+        a.setSexo("Hombre");
+        a.setEdad(1880);
         UsuarioModelImpl um = new UsuarioModelImpl();
 
-        //um.crearRegisto(a);
+        um.crearRegisto(a);
         //um.actualizarRegistro(a);
         //um.eliminarResgistro(1);
         a = um.obtenerRegistro(3);
