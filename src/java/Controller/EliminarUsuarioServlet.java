@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 17/03/2022
-Fecha actualizacion= 17/03/2022
+Fecha actualizacion= 19/03/2022
 Descripcion= Servlet eliminar del paquete controller
  */
 package Controller;
@@ -17,8 +17,7 @@ import java.io.IOException;
 public class EliminarUsuarioServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int idUsuario = Integer.parseInt(request.getParameter("idUsuario"));
         IUsuarioService service = new UsuarioServiceImpl();
         service.eliminarResgistro(idUsuario);

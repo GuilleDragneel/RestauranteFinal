@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 15/03/2022
-Fecha actualizacion= 15/03/2022
+Fecha actualizacion= 18/03/2022
 Descripcion= Servlet de listar usuarios del paquete controller
  */
 package Controller;
@@ -54,8 +54,7 @@ public class ListarUsuarioServlet extends HttpServlet {
             out.println("<td>" + usuario.getSexo() + "</td>");
             out.println("<td>" + usuario.getEdad() + "</td>");
             out.println("<th><a href=''>Editar</a></th>");
-            out.println("<th><a href='EliminarUsuarioServlet?idUduario=" + usuario.getcodigo() + "'>Eliminar</a></th>");
-            out.println("</tr>");
+            out.println("<th><a href='EliminarUsuarioServlet?idUsuario=" + usuario.getcodigo() + "'>Eliminar</a></th>");
         }
         out.println("</tbody>");
         out.println("</table>");
