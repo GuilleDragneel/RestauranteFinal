@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 17/03/2022
-Fecha actualizacion= 22/03/2022
+Fecha actualizacion= 23/03/2022
 Descripcion= Servlet editar del paquete controller
  */
 package Controller;
@@ -37,8 +37,8 @@ public class EditarUsuarioServlet extends HttpServlet {
         out.println("<p>Contraseña: <input type='text' name='contraseña' value='" + usuario.getcontraseña() + "'></p>");
         out.println("<p>Nombre: <input type='text' name='nombre' value='" + usuario.getNombre() + "'></p>");
         out.println("<p>Sexo: <input type='text' name='sexo' value='" + usuario.getSexo() + "'></p>");
-        out.println("<p>Edad: <input type='number' name='numero' min='18' value='" + usuario.getEdad() + "'></p>");
-        out.println("<input type='submit' value='Enviar'");
+        out.println("<p>Edad: <input type='number' name='edad' min='18' value='" + usuario.getEdad() + "'></p>");
+        out.println("<input type='submit' value='Guardar'>");
         out.println("</form>");
         out.println("</body>");
         out.println("</html>");

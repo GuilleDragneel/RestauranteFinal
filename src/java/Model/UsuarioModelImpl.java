@@ -129,12 +129,12 @@ public class UsuarioModelImpl implements IUsuarioModel {
 
     public static void main(String[] args) {
         Usuario a = new Usuario();
-        a.setcodigo("1");
-        a.setnombre_usuario("Hice King");
-        a.setcontraseña("bett");
-        a.setNombre("Simon");
-        a.setSexo("Hombre");
-        a.setEdad(1880);
+//        a.setcodigo("1");
+//        a.setnombre_usuario("Hice King");
+//        a.setcontraseña("bett");
+//        a.setNombre("Simon");
+//        a.setSexo("Hombre");
+//        a.setEdad(1880);
         UsuarioModelImpl um = new UsuarioModelImpl();
 
         um.crearRegisto(a);
@@ -146,7 +146,7 @@ public class UsuarioModelImpl implements IUsuarioModel {
         List<Usuario> listaUsuario = um.obtenerRegistros();
 
         for (Usuario u : listaUsuario) {
-            System.out.println("NOmbre: " + u.getNombre());
+            System.out.println("NOmbre: " + u.getcontraseña());
         }
         //System.out.println(um.obtenerRegistros());
     }
