@@ -16,6 +16,10 @@
         <servlet-name>GuardarEditarUsuarioServlet</servlet-name>
         <servlet-class>Controller.GuardarEditarUsuarioServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GuardarCrearUsuarioServlet</servlet-name>
+        <servlet-class>Controller.GuardarCrearUsuarioServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListarUsuarioServlet</servlet-name>
         <url-pattern>/ListarUsuarioServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>GuardarEditarUsuarioServlet</servlet-name>
         <url-pattern>/GuardarEditarUsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarCrearUsuarioServlet</servlet-name>
+        <url-pattern>/GuardarCrearUsuarioServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

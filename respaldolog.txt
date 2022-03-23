@@ -1,0 +1,90 @@
+commit bf47b2e19dc333dca2bacc2133f4a785efccaf8d
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Wed Mar 23 10:04:03 2022 -0600
+
+    Se abilito el metodo editarservlet y funciona correctamente
+
+commit 23aa56b50204a582a126c16db99f82812c0cea3a
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Tue Mar 22 11:03:05 2022 -0600
+
+    Se agrego el metodo editar y se anda perfeccionando en guardareditarusuarioservlet
+
+commit 3a14913b7aa69efb9f006bd3e797e17e742f80c6
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Tue Mar 22 09:09:12 2022 -0600
+
+    Se corrigio el metood eliminarServlet, tenia un error ortografico que impedia la operacion
+
+commit 04b15de7a2aa4ed84b3d97c9420f77b894bbf010
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Fri Mar 18 11:04:57 2022 -0600
+
+    Se intento arreglar el metood eliminar del servlet, pero aun tiene fallos, checar el codigo
+
+commit 0380a5c1b57cc181ab0ce11cc63a5de9c687a749
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Fri Mar 18 10:12:49 2022 -0600
+
+    Cambio de token y repositorio
+
+commit 69d1b13fd7b90165ec1cd3cf26a71ea2e4a736fa
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Thu Mar 17 11:00:13 2022 -0600
+
+    Se crearon los servlet de editar, eliminar, guardar y actulizar y se programa una tbala en ListarUsuarioServlet
+
+commit c8a3dd44c40751ae5287d7254cfaa8905c7f3890
+Merge: ffb2ea1 c5016d3
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Thu Mar 17 10:02:22 2022 -0600
+
+    Merge remote-tracking branch 'origin/Guillermo' into Guillermo
+
+commit ffb2ea180bc32af271496f388f11826d8770cfef
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Wed Mar 16 17:39:06 2022 -0600
+
+    Se agrego la interface y clase de service, se corrigio el controller de servlet, y se agrego IUsuarioModelImpl junto con sus metodos
+
+commit fe4c27d1d6ad291dc030750e2aa48fb7ed432eb2
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Wed Mar 16 10:42:05 2022 -0600
+
+    Se agrego la interface y clase de service, se corrigio el controller de servlet
+
+commit c5016d33cc0f6712c21b32c8e1b8602747abab20
+Author: GuilleDragnell <77121553+GuilleDragneel@users.noreply.github.com>
+Date:   Tue Mar 15 10:08:29 2022 -0600
+
+    Ensayo HTTP
+
+commit 10c8020bfeb56167e1fd3f0fcf144eacb6282ecc
+Author: GuilleDragnell <77121553+GuilleDragneel@users.noreply.github.com>
+Date:   Tue Mar 15 10:08:08 2022 -0600
+
+    Create Prueba.txt
+
+commit 20abbad8361dc41a623d2919286fdb5555dbc433
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Tue Mar 15 09:40:37 2022 -0600
+
+    Proyecto restaurante, se agrego el metodo eliminar, actualizar, insertar, extraer usuarios del paquete UsuarioModelo
+
+commit 54dc32b0787ecf384ae74a46c3d4d04d423bb81f
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Tue Mar 15 09:39:39 2022 -0600
+
+    Proyecto restaurante, se agrego el metodo eliminar, actualizar, insertar, extraer usuarios del paquete UsuarioModelo
+
+commit dacef0634d899a80518259818cf2719c41f01ca8
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Mon Mar 14 10:52:40 2022 -0600
+
+    Proyeco restaurante, y se agrego y actualizaron los usuarios
+
+commit be01d5eb3756dff736b286ae17ad723af5dde1d6
+Author: labso03 <labso03@labso03-All-Series>
+Date:   Wed Mar 9 10:17:34 2022 -0600
+
+    PRimer commit, proyecto nuevo base de datos funcionando se cambia jdk a 8

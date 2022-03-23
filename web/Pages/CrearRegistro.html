@@ -1,0 +1,22 @@
+<!--
+Autor= Guillermo Daniel Cruz Ortega
+Fecha creacion= 23/03/2022
+Fecha actualizacion= 23/03/2022
+Descripcion= HTML crear registro
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action='../GuardarCrearUsuarioServlet' method='POST'>
+            <input type='hidden' name='idUsuario1' value=''>
+            <p>Nombre de Usuario: <input type='text' name='nombreusu' value=''></p>
+            <p>Contrasena: <input type='text' name='contraseña' value=''></p>
+            <p>Nombre: <input type='text' name='nombre' value=''></p>
+            <p>Sexo: <input type='text' name='sexo' value=''></p>
+            <p>Edad: <input type='number' name='edad' min='18' value=''></p>
+            <input type='submit' value='Guardar'>
+        </form>
+    </body>
+</html>
