@@ -19,7 +19,6 @@ public class GuardarCrearUsuarioServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int idUsuario1 = Integer.parseInt(request.getParameter("idUsuario1"));
         IUsuarioService service = new UsuarioServiceImpl();
         Usuario u = new Usuario();
         u.setcodigo(request.getParameter("idUsuario1"));
