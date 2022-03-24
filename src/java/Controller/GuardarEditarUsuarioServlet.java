@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 17/03/2022
-Fecha actualizacion= 17/03/2022
+Fecha actualizacion= 22/03/2022
 Descripcion= Servlet guardar y editar del paquete controller
  */
 package Controller;
@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class GuardarEditarUsuarioServlet extends HttpServlet {
-
+    
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         IUsuarioService service = new UsuarioServiceImpl();
         Usuario u = new Usuario();
@@ -30,5 +30,5 @@ public class GuardarEditarUsuarioServlet extends HttpServlet {
         service.actualizarRegistro(u);
         response.sendRedirect("ListarUsuarioServlet");
     }
-
+    
 }

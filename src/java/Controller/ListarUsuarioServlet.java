@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 15/03/2022
-Fecha actualizacion= 18/03/2022
+Fecha actualizacion= 20/03/2022
 Descripcion= Servlet de listar usuarios del paquete controller
  */
 package Controller;
