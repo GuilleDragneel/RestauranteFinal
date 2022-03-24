@@ -20,6 +20,8 @@ public class GuardarEditarUsuarioServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         IUsuarioService service = new UsuarioServiceImpl();
         Usuario u = new Usuario();
+        int idUsuario1 = Integer.parseInt(request.getParameter("idUsuario1"));
+        u.setcodigo(request.getParameter("idUsuario1"));
         u.setnombre_usuario(request.getParameter("nombreusu"));
         u.setcontraseña(request.getParameter("contraseña"));
         u.setNombre(request.getParameter("nombre"));

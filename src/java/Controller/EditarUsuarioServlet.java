@@ -37,7 +37,7 @@ public class EditarUsuarioServlet extends HttpServlet {
         out.println("<p>Contraseña: <input type='text' name='contraseña' value='" + usuario.getcontraseña() + "'></p>");
         out.println("<p>Nombre: <input type='text' name='nombre' value='" + usuario.getNombre() + "'></p>");
         out.println("<p>Sexo: <input type='text' name='sexo' value='" + usuario.getSexo() + "'></p>");
-        out.println("<p>Edad: <input type='number' name='edad' min='18' value='" + usuario.getEdad() + "'></p>");
+        out.println("<p>Edad: <input type='number' name='edad' min='18' max='99' value='" + usuario.getEdad() + "'></p>");
         out.println("<input type='submit' value='Guardar'>");
         out.println("</form>");
         out.println("</body>");
