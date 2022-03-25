@@ -38,3 +38,12 @@ Descripcion= Documento de estilo css para ListarUsuarioServley
     cursor: pointer;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url("https://h7.alamy.com/compes/2f28bhh/vector-seamless-food-on-chalkboard-fondo-para-fondos-de-pantalla-mayormente-utilizado-en-restaurantes-disenos-2f28bhh.jpg");
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+}
