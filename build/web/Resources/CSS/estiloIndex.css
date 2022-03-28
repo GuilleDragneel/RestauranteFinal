@@ -84,6 +84,18 @@ section.forma{
     padding: 0px 10px;
     background-color: #000;
 }
+section.forma_registro{
+    width: 70%;
+    margin: auto;
+    padding: 0px 10px;
+    background-color: #F2D2B3;
+}
+section.forma_tabla{
+    width: 70%;
+    margin: auto;
+    padding: 0px 10px;
+    background-color: #F2D2B3;
+}
 /*Estilo tabla*/
 table tr:hover {
     background: pink;

@@ -46,9 +46,12 @@ public class ListarUsuarioServlet extends HttpServlet {
         out.println("<li><a href='Acercade.html'>Acercade...</a></li>");
         out.println("</li>");
         out.println("</ul>");
-        out.println(" </nav>");
-        out.println(" </section>");
-
+        out.println("</nav>");
+        out.println("<br>");
+        out.println("<br>");
+        out.println("<br>");
+        out.println("</section>");
+        out.println("<section class='forma_tabla'>");
         out.println("<h1> Tabla Usuarios </h1>");
         out.println("<table border='2'>");
         out.println("<tr>");
@@ -75,6 +78,7 @@ public class ListarUsuarioServlet extends HttpServlet {
         }
         out.println("</tbody>");
         out.println("</table>");
+        out.println("</section>");
         out.println("</body>");
 
         out.println("</html>");
