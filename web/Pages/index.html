@@ -1,7 +1,7 @@
 <!--
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 24/03/2022
-Fecha actualizacion= 24/03/2022
+Fecha actualizacion= 26/03/2022
 Descripcion= HTML pagina princial con menu de opciones
 -->
 <!DOCTYPE html>
@@ -11,16 +11,19 @@ Descripcion= HTML pagina princial con menu de opciones
     </head>
     <body>
         <div class="header"> Restaurante Flor de Loto</div>
-        <div class="menu">
-            <ul>
-                <li>Inicio</li>
-                <li><a href="CrearRegistro.html">Crear</a></li>
-                <li><a href="../ListarUsuarioServlet">Listar</a></li>
-                <li><a href="../ListarUsuarioServlet">Editar</a></li>
-                <li><a href="../ListarUsuarioServlet">Eliminar</a></li>
-                <li>Acercade...</li>
+        <nav>
+            <ul id="menu">
+                <li><a href="">Inicio</a>
+                    <ul>
+                        <li><a href="CrearRegistro.html">Crear</a></li>
+                        <li><a href="../ListarUsuarioServlet">Listar</a></li>
+                        <li><a href="../ListarUsuarioServlet">Editar</a></li>
+                        <li><a href="../ListarUsuarioServlet">Eliminar</a></li>
+                        <li>Acercade...</li>
+                    </ul>
+                </li>
             </ul>
-        </div>
+        </nav>
         <div class="footer">
             Guillermo 
             Cristian 
