@@ -7,16 +7,42 @@ Descripcion= HTML crear registro
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel='stylesheet' href='../Resources/CSS/estiloIndex.css'>
     </head>
     <body>
-        <form action='../GuardarCrearUsuarioServlet' method='POST'>
-            <input type='hidden' name='idUsuario1' value=''>
-            <p>Nombre de Usuario: <input type='text' name='nombreusu' value=''></p>
-            <p>Contrasena: <input type='text' name='contraseña' value=''></p>
-            <p>Nombre: <input type='text' name='nombre' value=''></p>
-            <p>Sexo: <input type='text' name='sexo' value=''></p>
-            <p>Edad: <input type='number' name='edad' min='18' value=''></p>
-            <input type='submit' value='Guardar'>
-        </form>
+        <section class="forma">
+            <div class="header"><h1 class="principal"> Restaurante Flor de Loto</h1></div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="">Inicio</a>
+                        <ul>
+                            <li><a href="CrearRegistro.html">Crear</a></li>
+                            <li><a href="../ListarUsuarioServlet">Listar</a></li>
+                            <li><a href="../ListarUsuarioServlet">Editar</a></li>
+                            <li><a href="../ListarUsuarioServlet">Eliminar</a></li>
+                        </ul>
+                    <li><a href="Acercade.html">Acercade...</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </section>  
+        <section class="forma">
+            <form action='../GuardarCrearUsuarioServlet' method='POST'>
+                <input type='hidden' name='idUsuario1' value=''>
+                <p>Nombre de Usuario: <input type='text' name='nombreusu' value=''></p>
+                <p>Contrasena: <input type='text' name='contraseña' value=''></p>
+                <p>Nombre: <input type='text' name='nombre' value=''></p>
+                <p>Sexo: <input type='text' name='sexo' value=''></p>
+                <p>Edad: <input type='number' name='edad' min='18' value=''></p>
+                <input type='submit' value='Guardar'>
+            </form>
+        </section>
+        <section class="forma">
+            <div class="footer">
+                Guillermo 
+                Cristian 
+                Fany
+            </div>
+        </section>
     </body>
 </html>

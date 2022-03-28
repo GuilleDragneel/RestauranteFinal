@@ -1,7 +1,7 @@
 /*
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 15/03/2022
-Fecha actualizacion= 20/03/2022
+Fecha actualizacion= 28/03/2022
 Descripcion= Servlet de listar usuarios del paquete controller
  */
 package Controller;
@@ -28,13 +28,30 @@ public class ListarUsuarioServlet extends HttpServlet {
         out.println("<html>");
 
         out.println("<head>");
-        out.println("<link rel='stylesheet' href='" + request.getContextPath() + "/Resources/CSS/estilo.css'>");
+        out.println("<link rel='stylesheet' href='" + request.getContextPath() + "/Resources/CSS/estiloIndex.css'>");
         out.println("</head>");
 
         out.println("<body>");
-        out.println("<h1> Servlet </h1>");
+        out.println("<section class='forma'>");
+        out.println("<div class='header'><h1 class='principal'> Restaurante Flor de Loto</h1></div>");
+        out.println("<nav>");
+        out.println("<ul id='menu'>");
+        out.println("<li><a href='" + request.getContextPath() + "/Pages/index.html'>Inicio</a>");
+        out.println("<ul>");
+        out.println("<li><a href='" + request.getContextPath() + "/Pages/CrearRegistro.html'>Crear</a></li>");
+        out.println("<li><a href='ListarUsuarioServlet'>Listar</a></li>");
+        out.println("<li><a href='ListarUsuarioServlet'>Editar</a></li>");
+        out.println("<li><a href='ListarUsuarioServlet'>Eliminar</a></li>");
+        out.println("</ul>");
+        out.println("<li><a href='Acercade.html'>Acercade...</a></li>");
+        out.println("</li>");
+        out.println("</ul>");
+        out.println(" </nav>");
+        out.println(" </section>");
+
+        out.println("<h1> Tabla Usuarios </h1>");
         out.println("<table border='2'>");
-        out.println(" <tr>");
+        out.println("<tr>");
         out.println("<th>Nombre Usuario</th>");
         out.println("<th>Contraseña</th>");
         out.println("<th>Nombre</th>");
@@ -58,7 +75,6 @@ public class ListarUsuarioServlet extends HttpServlet {
         }
         out.println("</tbody>");
         out.println("</table>");
-
         out.println("</body>");
 
         out.println("</html>");
