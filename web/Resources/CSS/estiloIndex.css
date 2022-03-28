@@ -4,32 +4,45 @@ Fecha creacion= 24/03/2022
 Fecha actualizacion= 24/03/2022
 Descripcion= Documento de estilo css para el index
 */
-/*#EEC170 MOSTAZA
+/*
+#EEC170 MOSTAZA
 #F2EADC BLANCO
 #FF9F1C NARANJA
-#F2D2B3 CREMA*/
+#F2D2B3 CREMA
+*/
 .header{
-    background-color: #000000;
     color: white;
     padding: 15px;
     font-family: Helvetica;
-    width: 480px;
+    width: 680px;
     margin: 0 auto;
-
+}
+.bodys{
+    aling: center;
 }
 .footer{
-    background-color: #000000;
-    color: #FF0080;
+    background: #E6B68B;
     text-align: center;
-    font-size: 12px;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 0.9w;
     padding: 15px;
+    color: #ffffff;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 50px;
+    z-index: 0;
+    width: 70;
+    margin: 0 auto;
+    background-color: #000;
 }
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: #000000;
+    background: #E6B68B;
     background-size: cover;
     font-family: 'Lato', sans-serif;
 }
@@ -42,7 +55,7 @@ ul{
 }
 #menu li>a{
     background-color: #97572B;
-    color: white;   
+    color: white;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -61,4 +74,13 @@ ul{
 }
 #menu>li:hover>ul {
     display:block;
+}
+h1.principal{
+    font-family: "Sans-serif";
+}
+section.forma{
+    width: 70%;
+    margin: auto;
+    padding: 0px 10px;
+    background-color: #000;
 }
