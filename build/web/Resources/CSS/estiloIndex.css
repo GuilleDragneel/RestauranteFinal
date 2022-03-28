@@ -1,0 +1,64 @@
+/*
+Autor= Guillermo Daniel Cruz Ortega
+Fecha creacion= 24/03/2022
+Fecha actualizacion= 24/03/2022
+Descripcion= Documento de estilo css para el index
+*/
+/*#EEC170 MOSTAZA
+#F2EADC BLANCO
+#FF9F1C NARANJA
+#F2D2B3 CREMA*/
+.header{
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    font-family: Helvetica;
+    width: 480px;
+    margin: 0 auto;
+
+}
+.footer{
+    background-color: #000000;
+    color: #FF0080;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+#menu li>a{
+    background-color: #97572B;
+    color: white;   
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+#menu li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+}
+#menu>li{
+    float: left;
+    text-align:center
+}
+#menu>li>ul{
+    display: none;
+}
+#menu>li:hover>ul {
+    display:block;
+}
