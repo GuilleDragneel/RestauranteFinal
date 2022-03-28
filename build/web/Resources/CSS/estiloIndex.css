@@ -7,11 +7,11 @@ Descripcion= Documento de estilo css para el index
 /*
 #EEC170 MOSTAZA
 #F2EADC BLANCO
-#FF9F1C NARANJA
+#FFAE6A NARANJA
 #F2D2B3 CREMA
 */
 .header{
-    color: white;
+    color: #ffffff;
     padding: 15px;
     font-family: Helvetica;
     width: 680px;
@@ -33,7 +33,7 @@ Descripcion= Documento de estilo css para el index
     bottom: 0px;
     height: 50px;
     z-index: 0;
-    width: 70;
+    width: 70%;
     margin: 0 auto;
     background-color: #000;
 }
@@ -90,27 +90,27 @@ section.forma_registro{
     padding: 0px 10px;
     background-color: #F2D2B3;
 }
+/*Estilo tabla*/
 section.forma_tabla{
     width: 70%;
     margin: auto;
     padding: 0px 10px;
-    background-color: #F2D2B3;
+    background-color: #FFAE6A;
 }
-/*Estilo tabla*/
 table tr:hover {
-    background: pink;
+    background: #F2EADC;
     cursur: pointer;
 }
 table {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 th, td {
-  text-align: left;
-  padding: 8px;
+    text-align: left;
+    padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #D6EEEE;
+    background-color: #F2EADC;
 }

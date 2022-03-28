@@ -26,11 +26,9 @@ public class ListarUsuarioServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<!DOCTYPE html>");
         out.println("<html>");
-
         out.println("<head>");
         out.println("<link rel='stylesheet' href='" + request.getContextPath() + "/Resources/CSS/estiloIndex.css'>");
         out.println("</head>");
-
         out.println("<body>");
         out.println("<section class='forma'>");
         out.println("<div class='header'><h1 class='principal'> Restaurante Flor de Loto</h1></div>");
@@ -43,7 +41,7 @@ public class ListarUsuarioServlet extends HttpServlet {
         out.println("<li><a href='ListarUsuarioServlet'>Editar</a></li>");
         out.println("<li><a href='ListarUsuarioServlet'>Eliminar</a></li>");
         out.println("</ul>");
-        out.println("<li><a href='Acercade.html'>Acercade...</a></li>");
+        out.println("<li><a href='" + request.getContextPath() + "/Pages/Acercade.html'>Acercade...</a></li>");
         out.println("</li>");
         out.println("</ul>");
         out.println("</nav>");
@@ -75,13 +73,19 @@ public class ListarUsuarioServlet extends HttpServlet {
             out.println("<td>" + usuario.getEdad() + "</td>");
             out.println("<th><a href='EditarUsuarioServlet?idUsuario1=" + usuario.getcodigo() + "'>Editar</a></th>");
             out.println("<th><a href='EliminarUsuarioServlet?idUsuario=" + usuario.getcodigo() + "' onclick=\"return confirm('Desea eliminar el usuario?');\")>Eliminar</a></th>");
+            out.println("</tr>");
         }
         out.println("</tbody>");
         out.println("</table>");
         out.println("</section>");
+        out.println("<section class='forma'>");
+        out.println("<div class='footer'>");
+        out.println("Guillermo ");
+        out.println("Cristian");
+        out.println("Fany");
+        out.println("</div>");
+        out.println("</section>");
         out.println("</body>");
-
         out.println("</html>");
     }
-
 }
