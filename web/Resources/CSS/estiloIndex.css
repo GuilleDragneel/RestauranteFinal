@@ -16,6 +16,7 @@ Descripcion= Documento de estilo css para el index
     font-family: Helvetica;
     width: 680px;
     margin: 0 auto;
+    text-align: center;
 }
 .bodys{
     aling: center;
@@ -33,7 +34,7 @@ Descripcion= Documento de estilo css para el index
     bottom: 0px;
     height: 50px;
     z-index: 0;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     background-color: #000;
 }
@@ -110,7 +111,31 @@ th, td {
     text-align: left;
     padding: 8px;
 }
-
 tr:nth-child(even) {
     background-color: #F2EADC;
+}
+/*Esctilo Button*/
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #EEC170;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9x #999;
+}
+
+.button:hover {
+    background-color: #FFAE6A;
+}
+
+.button:active {
+    background-color: #F2EADC;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }

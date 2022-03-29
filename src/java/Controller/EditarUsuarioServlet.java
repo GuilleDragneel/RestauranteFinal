@@ -54,17 +54,22 @@ public class EditarUsuarioServlet extends HttpServlet {
         out.println("<section class='forma_registro'>");
         out.println("<form action='GuardarEditarUsuarioServlet' method='GET'>");
         out.println("<input type='hidden' name='idUsuario1' value='" + usuario.getcodigo() + "'>");
-        out.println("<p>Nombre de Usuario: <input type='text' name='nombreusu' value='" + usuario.getnombre_usuario() + "'></p>");
-        out.println("<p>Contraseña: <input type='text' name='contraseña' value='" + usuario.getcontraseña() + "'></p>");
-        out.println("<p>Nombre: <input type='text' name='nombre' value='" + usuario.getNombre() + "'></p>");
-        out.println("<p>Sexo: <input type='text' name='sexo' value='" + usuario.getSexo() + "'></p>");
-        out.println("<p>Edad: <input type='number' name='edad' min='18' max='99' value='" + usuario.getEdad() + "'></p>");
-        out.println("<input type='submit' value='Guardar'>");
+        out.println("<label>Nombre de Usuario: </label><br>");
+        out.println("<input type='text' name='nombreusu' value='" + usuario.getnombre_usuario() + "' required pattern='[A-Za-z]{1,}' ><br>");
+        out.println("<label>Nombre: </label><br>");
+        out.println("<input type='text' name='contraseña' value='" + usuario.getcontraseña() + "' required pattern='[A-Za-z]{1,}' ><br>");
+        out.println("<label>Contrasena: </label><br>");
+        out.println("<input type='text' name='nombre' value='" + usuario.getNombre() + "' required pattern='[A-Za-z]{1,}' ><br>");
+        out.println("<label>Sexo: </label><br>");
+        out.println("<input type='text' name='sexo' value='" + usuario.getSexo() + "' required pattern='[A-Za-z]{1,}' ><br>");
+        out.println("<label>Edad: </label><br>");
+        out.println("<input type='number' name='edad' min='18' value='" + usuario.getEdad() + "' ><br>");
+        out.println("<br>");
+        out.println("<button  class='button'>Guardar</button>");
         out.println("</section>");
         out.println("</form>");
         out.println("</body>");
         out.println("</html>");
-
     }
 
 }
