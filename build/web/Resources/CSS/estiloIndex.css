@@ -16,8 +16,14 @@ Descripcion= Documento de estilo css para el index
     font-family: Helvetica;
     width: 680px;
     margin: 0 auto;
+    font-size:80%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     text-align: center;
-    
+    z-index: 0;
+    width: 100%;
+    margin: 0 auto;
 }
 .bodys{
     aling: center;
@@ -37,8 +43,8 @@ Descripcion= Documento de estilo css para el index
     z-index: 0;
     width: 100%;
     margin: 0 auto;
-    display: none;
     background-color: #000;
+    font-size:80%;
 }
 body {
     width: 100vw;
@@ -116,7 +122,7 @@ th, td {
 tr:nth-child(even) {
     background-color: #F2EADC;
 }
-/*Esctilo Button*/
+/*Estilo Button*/
 .button {
     display: inline-block;
     padding: 10px 15px;
@@ -152,10 +158,10 @@ tr:nth-child(even) {
 
 .conteiner{
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: normal;
+    align-content: normal;
     min-height: 70vh;
-    background: #E6B68B;
+    background: #F2D2B3;
 }
 
 .card{
@@ -167,7 +173,6 @@ tr:nth-child(even) {
     overflow: hidden;
     transition: .5s;
 }
-
 .card:hover{
     box-shadow: 0 5px 15px rgba(3,89,92, .5 );
     transform: translatey(-15px)
