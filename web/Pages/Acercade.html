@@ -1,15 +1,97 @@
 <!--
 Autor= Guillermo Daniel Cruz Ortega
 Fecha creacion= 24/03/2022
-Fecha actualizacion= 24/03/2022
+Fecha actualizacion= 30/03/2022
 Descripcion= HTML informacion de creadores del sitio
 -->
 <!DOCTYPE html>
 <html>
     <head>
         <link rel='stylesheet' href='" + request.getContextPath() + "/Resources/CSS/estilo.css'>
+        <link rel='stylesheet' href='../Resources/CSS/estiloIndex.css'>
     </head>
     <body>
+        <section class="forma"> 
+            <div class="header"><h1 class="principal"> Restaurante Flor de Loto</h1></div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a>
+                        <ul>
+                            <li><a href="CrearRegistro.html">Crear</a></li>
+                            <li><a href="../ListarUsuarioServlet">Listar</a></li>
+                            <li><a href="../ListarUsuarioServlet">Editar</a></li>
+                            <li><a href="../ListarUsuarioServlet">Eliminar</a></li>
+                        </ul>
+                    <li><a href="Acercade.html">Acercade...</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <div class="conteiner">
+            <div class="card">
+                <div class="head">
+                    <div class="circle"></div>
+                    <div class="img">
+                        <img src="../Resources/img/prueba1.jpg">
 
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3> Guillermo Daniel </h3>
+                    <h4> Desarrollador Backend  </h4>
+                    <p> Este desarrollador, fue el encargado de las partes del sitio web que el usuario ve y con las que interactúa. Esto también se llama a veces desarrollo del lado del cliente o del lado del navegador. </p>
+                </div>
+
+                <div class="contact">
+                    <a href="https://translate.google.com/?u=[url]">Contacto</a>  
+                </div>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <div class="circle"></div>
+                    <div class="img">
+                        <img src="../Resources/img/prueba2.jpg">
+
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3> Cristian Adair </h3>
+                    <h4> Desarrollador Frontend </h4>
+                    <p>Este desarrollador se encargo de programar el código para hacer que la interfaz sea atractiva, intuitiva y que la experiencia</p>
+                </div>
+
+                <div class="contact">
+                    <a href="https://translate.google.com/?u=[url]">Contacto</a> 
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="head">
+                    <div class="circle"></div>
+                    <div class="img">
+                        <img src="../Resources/img/prueba3.jpg">
+
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>STEPHANIE JACQUELINE </h3>
+                    <h4> Desarrollador Full Stack </h4>
+                    <p> Encargado de manejar los aspectos relacionados con la creación y el mantenimiento de la aplicación. </p>
+                </div>
+
+                <div class="contact">
+                    <a href="https://translate.google.com/?u=[url]">Contacto</a> 
+                </div>
+            </div>
+            <section class="forma_footer">
+                <div class="footer">
+                    Guillermo 
+                    Cristian 
+                    Fany
+                </div>
+            </section>
     </body>
 </html>
