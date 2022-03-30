@@ -17,6 +17,7 @@ Descripcion= Documento de estilo css para el index
     width: 680px;
     margin: 0 auto;
     text-align: center;
+    
 }
 .bodys{
     aling: center;
@@ -36,6 +37,7 @@ Descripcion= Documento de estilo css para el index
     z-index: 0;
     width: 100%;
     margin: 0 auto;
+    display: none;
     background-color: #000;
 }
 body {
@@ -233,8 +235,6 @@ tr:nth-child(even) {
     align-content:center;
     justify-content:center;
 }
-
-
 .card .contact a {
     text-decoration:none;
     color:#000;

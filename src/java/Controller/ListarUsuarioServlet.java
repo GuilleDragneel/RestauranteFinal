@@ -80,8 +80,8 @@ public class ListarUsuarioServlet extends HttpServlet {
         out.println("</section>");
         out.println("<section class='forma'>");
         out.println("<div class='footer'>");
-        out.println("Guillermo ");
-        out.println("Cristian");
+        out.println("Guillermo -");
+        out.println("Cristian -");
         out.println("Fany");
         out.println("</div>");
         out.println("</section>");
