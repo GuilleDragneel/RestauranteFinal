@@ -78,7 +78,7 @@ public class ListarUsuarioServlet extends HttpServlet {
         out.println("</tbody>");
         out.println("</table>");
         out.println("</section>");
-        out.println("<section class='forma'>");
+        out.println("<section class='forma_footer'>");
         out.println("<div class='footer'>");
         out.println("Guillermo -");
         out.println("Cristian -");
