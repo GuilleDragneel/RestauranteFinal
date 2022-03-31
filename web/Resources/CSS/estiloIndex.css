@@ -155,45 +155,42 @@ tr:nth-child(even) {
     box-sizing: border-box;
     font-family:'Baloo 2',cursive;
 }
-
 .conteiner{
-    display: flex;
+    display:flex;
     align-items: normal;
     align-content: normal;
     min-height: 70vh;
     background: #F2D2B3;
 }
-
 .card{
-    position: relative;
-    width: 300px;
+    position:relative;
+    align-content:center;
+    justify-content:center;
+    position:relative;
+    width: 500px;
     height: 480px;
     background: #F2D2B3;
     border-radius: 5px;
     overflow: hidden;
-    transition: .5s;
+    transition:3s;
 }
 .card:hover{
     box-shadow: 0 5px 15px rgba(3,89,92, .5 );
     transform: translatey(-15px)
-
 }
-
 .card .head{
     height:125px;
     width:100%;
     position:relative;
 }
-
 .card .head .circle{
     position:absolute;
-    width: 300px;
+    width: 400px;
     height: 300px;
     border-radius: 50%;
     background: #FFAE6A;
     bottom: 0;
 }
-
 .card .head .img{
     width: 150px;
     height: 150px;
@@ -204,34 +201,28 @@ tr:nth-child(even) {
     left: 50%;
     transform: translate(-50%);
 }
-
 .card .head .img img{
     width:100%;
     height:100%;
     border-radius:100%;
     object-fit:cover;
 }
-
 .card .description {
     height:200px;
     padding:40px 20px 20px 20px;
     border-bottom:solid 1px rgba(6,74,76,.18);
     text-align:center;
 }
-
 .card .description h3{
     color: #97572B;
 }
-
 .card .description h4{
     color: #000;
 }
-
 .card .description p{
     margin-top:20px;
     font-size:15px;
 }
-
 .card .contact{
     width:100%;
     height:150px;
@@ -248,8 +239,17 @@ tr:nth-child(even) {
     border-radius:5px;
     transition:.3s;
 }
-
 .card .contact a:hover {
     background:#E6B68B;
-
+}
+.forma{
+    position:relative;
+    align-content:center;
+    justify-content:normal;
+}
+/*Division de registro*/
+.div.Registro{
+    position: absolute;
+    text-align: center;
+    align-content: center;
 }
